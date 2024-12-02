@@ -1,0 +1,234 @@
+testname: Single Packet Loss Audibility Test
+testId: SPLAT-Cello_example_mono-29144497198618892
+bufferSize: 2048
+stopOnErrors: false
+showButtonPreviousPage: true
+remoteService: service/write.php
+pages:
+- type: generic
+  id: Explanation
+  name: Instructions
+  content: 'The goal of this test is to assess how audible audio glitches are in an
+    audio signal.                 You will be presented with two 3-second unlabeled
+    audio tracks in each of the 20 listening sessions.                 One track is
+    the unaltered audio, and the other contains a glitch.                 You need
+    to assign each track one of four scores: "Not at all", "Barely", "A bit", "Much"
+    representing how audible the glitch was.                   <h2>Audio Examples</h2>
+    <p>Below you can find some examples of the audio tracks you will be presented with.<br>
+                  Listen carefully to the examples to understand the scale.<p/>                  <h3>Not
+    at all</h3>                  <audio controls>                      <source src="configs/resources/audio/example_not_at_all_1_stim.wav"
+    type="audio/wav">                      Your browser does not support the audio
+    element.                  </audio>                  <audio controls>                      <source
+    src="configs/resources/audio/example_not_at_all_2_ref.wav" type="audio/wav">                      Your
+    browser does not support the audio element.                  </audio>                  <h3>Barely</h3>                  <audio
+    controls>                      <source src="configs/resources/audio/example_barely_1_stim.wav"
+    type="audio/wav">                      Your browser does not support the audio
+    element.                  </audio>                  <audio controls>                      <source
+    src="configs/resources/audio/example_barely_2_stim.wav" type="audio/wav">                      Your
+    browser does not support the audio element.                  </audio>                  <h3>A
+    bit</h3>                  <audio controls>                      <source src="configs/resources/audio/example_a_bit_1_stim.wav"
+    type="audio/wav">                      Your browser does not support the audio
+    element.                  </audio>                  <audio controls>                      <source
+    src="configs/resources/audio/example_a_bit_2_stim.wav" type="audio/wav">                      Your
+    browser does not support the audio element.                  </audio>                  <h3>Much</h3>                  <audio
+    controls>                      <source src="configs/resources/audio/example_much_1_stim.wav"
+    type="audio/wav">                      Your browser does not support the audio
+    element.                  </audio>                  <audio controls>                      <source
+    src="configs/resources/audio/example_much_2_stim.wav" type="audio/wav">                      Your
+    browser does not support the audio element.                  </audio>'
+- type: generic
+  id: Consent
+  name: Declaration of consent
+  content: <h1>Declaration of consent</h1>      <p>By clicking the 'Next' button,
+    you give your consent to the following. Please read the following consent entries
+    carefully.</p>      <br/>      <p><i>I confirm that I have read and understand
+    the participant information <br/>sheet for the project </i>Towards Perceptual
+    Deep Learning-based Packet Loss Concealment.</p>      <br/>      <p><i>I confirm
+    that I am 18 years of age or older.</i></p>      <br/>      <p><i>I understand
+    that if I have any queries or concerns relating to this <br/>study I can contact
+    Luca Vignati (luca.vignati@unitn.it) at any time.</i></p>      <br/>      <p><i>      I
+    understand that I have the right to withdraw from this study at any <br/>      time
+    without requirement to provide reason, and that if I withdraw,<br/>       any
+    data provided up to this point will be retained.</i></p>      <br/>      <p><i>I
+    agree for my personal information, including gender, age and listening experience
+    to be recorded.</i></p>      <br/>      <p><i>      I understand that the data
+    I provide may be presented anonymously in <br/>r      esearch output and publication,
+    will be retained securely and indefinitely,<br/>      and may be made accessible
+    to future researchers.</i></p>
+- type: generic
+  id: Volume
+  name: Adjust your volume
+  content: <h1>Adjust your volume</h1>      <p>Before the experiment begins, please
+    adjust your listening volume.</p>      <p>Please do not change the output volume
+    of the system from now on.</p>
+-
+  - random
+  - type: splat
+    id: 23299-33799-29299-32299-39799-30799-6799-17299-36799-35299
+    name: Test in progress
+    content: '<p>IMPORTANT: When you press play on a stimulus, let it play till the
+      end or hit pause. If you press play on another stimulus before the first finished,
+      a glitch will be produced and the test will be invalid.</p>Please rate the audibility
+      of the glitch in the following audio pairs. Only one of them contains a glitch.
+      How much can you hear it?'
+    createAnchor35: false
+    createAnchor70: false
+    showWaveform: false
+    enableLooping: false
+    switchBack: true
+    randomize: true
+    reference: configs/resources/audio/guitar_reference.wav
+    stimuli:
+      0-23299: configs/resources/stimuli/SPLAT-Cello_example_mono-29144497198618892/0-23299.wav
+      1-33799: configs/resources/stimuli/SPLAT-Cello_example_mono-29144497198618892/1-33799.wav
+      2-29299: configs/resources/stimuli/SPLAT-Cello_example_mono-29144497198618892/2-29299.wav
+      3-32299: configs/resources/stimuli/SPLAT-Cello_example_mono-29144497198618892/3-32299.wav
+      4-39799: configs/resources/stimuli/SPLAT-Cello_example_mono-29144497198618892/4-39799.wav
+      5-30799: configs/resources/stimuli/SPLAT-Cello_example_mono-29144497198618892/5-30799.wav
+      6-6799: configs/resources/stimuli/SPLAT-Cello_example_mono-29144497198618892/6-6799.wav
+      7-17299: configs/resources/stimuli/SPLAT-Cello_example_mono-29144497198618892/7-17299.wav
+      8-36799: configs/resources/stimuli/SPLAT-Cello_example_mono-29144497198618892/8-36799.wav
+      9-35299: configs/resources/stimuli/SPLAT-Cello_example_mono-29144497198618892/9-35299.wav
+      guitar_anchor: configs/resources/audio/guitar_anchor.wav
+  - type: splat
+    id: 8299-5299-38299-11299-27799-21799-12799-41299-3799-26299
+    name: Test in progress
+    content: '<p>IMPORTANT: When you press play on a stimulus, let it play till the
+      end or hit pause. If you press play on another stimulus before the first finished,
+      a glitch will be produced and the test will be invalid.</p>Please rate the audibility
+      of the glitch in the following audio pairs. Only one of them contains a glitch.
+      How much can you hear it?'
+    createAnchor35: false
+    createAnchor70: false
+    showWaveform: false
+    enableLooping: false
+    switchBack: true
+    randomize: true
+    reference: configs/resources/audio/guitar_reference.wav
+    stimuli:
+      10-8299: configs/resources/stimuli/SPLAT-Cello_example_mono-29144497198618892/10-8299.wav
+      11-5299: configs/resources/stimuli/SPLAT-Cello_example_mono-29144497198618892/11-5299.wav
+      12-38299: 
+        configs/resources/stimuli/SPLAT-Cello_example_mono-29144497198618892/12-38299.wav
+      13-11299: 
+        configs/resources/stimuli/SPLAT-Cello_example_mono-29144497198618892/13-11299.wav
+      14-27799: 
+        configs/resources/stimuli/SPLAT-Cello_example_mono-29144497198618892/14-27799.wav
+      15-21799: 
+        configs/resources/stimuli/SPLAT-Cello_example_mono-29144497198618892/15-21799.wav
+      16-12799: 
+        configs/resources/stimuli/SPLAT-Cello_example_mono-29144497198618892/16-12799.wav
+      17-41299: 
+        configs/resources/stimuli/SPLAT-Cello_example_mono-29144497198618892/17-41299.wav
+      18-3799: configs/resources/stimuli/SPLAT-Cello_example_mono-29144497198618892/18-3799.wav
+      19-26299: 
+        configs/resources/stimuli/SPLAT-Cello_example_mono-29144497198618892/19-26299.wav
+      guitar_anchor: configs/resources/audio/guitar_anchor.wav
+- type: generic
+  id: Pause
+  name: Break
+  content: <h1>Break</h1>      <p>Please take 5 minutes of rest from this trial. Take
+    off your headphones and chill for a while.</p>
+-
+  - random
+  - type: splat
+    id: 23299-33799-29299-32299-39799-30799-6799-17299-36799-35299
+    name: Test in progress
+    content: '<p>IMPORTANT: When you press play on a stimulus, let it play till the
+      end or hit pause. If you press play on another stimulus before the first finished,
+      a glitch will be produced and the test will be invalid.</p>Please rate the audibility
+      of the glitch in the following audio pairs. Only one of them contains a glitch.
+      How much can you hear it?'
+    createAnchor35: false
+    createAnchor70: false
+    showWaveform: false
+    enableLooping: false
+    switchBack: true
+    randomize: true
+    reference: configs/resources/audio/guitar_reference.wav
+    stimuli:
+      0-23299: configs/resources/stimuli/SPLAT-Cello_example_mono-29144497198618892/0-23299.wav
+      1-33799: configs/resources/stimuli/SPLAT-Cello_example_mono-29144497198618892/1-33799.wav
+      2-29299: configs/resources/stimuli/SPLAT-Cello_example_mono-29144497198618892/2-29299.wav
+      3-32299: configs/resources/stimuli/SPLAT-Cello_example_mono-29144497198618892/3-32299.wav
+      4-39799: configs/resources/stimuli/SPLAT-Cello_example_mono-29144497198618892/4-39799.wav
+      5-30799: configs/resources/stimuli/SPLAT-Cello_example_mono-29144497198618892/5-30799.wav
+      6-6799: configs/resources/stimuli/SPLAT-Cello_example_mono-29144497198618892/6-6799.wav
+      7-17299: configs/resources/stimuli/SPLAT-Cello_example_mono-29144497198618892/7-17299.wav
+      8-36799: configs/resources/stimuli/SPLAT-Cello_example_mono-29144497198618892/8-36799.wav
+      9-35299: configs/resources/stimuli/SPLAT-Cello_example_mono-29144497198618892/9-35299.wav
+      guitar_anchor: configs/resources/audio/guitar_anchor.wav
+  - type: splat
+    id: 8299-5299-38299-11299-27799-21799-12799-41299-3799-26299
+    name: Test in progress
+    content: '<p>IMPORTANT: When you press play on a stimulus, let it play till the
+      end or hit pause. If you press play on another stimulus before the first finished,
+      a glitch will be produced and the test will be invalid.</p>Please rate the audibility
+      of the glitch in the following audio pairs. Only one of them contains a glitch.
+      How much can you hear it?'
+    createAnchor35: false
+    createAnchor70: false
+    showWaveform: false
+    enableLooping: false
+    switchBack: true
+    randomize: true
+    reference: configs/resources/audio/guitar_reference.wav
+    stimuli:
+      10-8299: configs/resources/stimuli/SPLAT-Cello_example_mono-29144497198618892/10-8299.wav
+      11-5299: configs/resources/stimuli/SPLAT-Cello_example_mono-29144497198618892/11-5299.wav
+      12-38299: 
+        configs/resources/stimuli/SPLAT-Cello_example_mono-29144497198618892/12-38299.wav
+      13-11299: 
+        configs/resources/stimuli/SPLAT-Cello_example_mono-29144497198618892/13-11299.wav
+      14-27799: 
+        configs/resources/stimuli/SPLAT-Cello_example_mono-29144497198618892/14-27799.wav
+      15-21799: 
+        configs/resources/stimuli/SPLAT-Cello_example_mono-29144497198618892/15-21799.wav
+      16-12799: 
+        configs/resources/stimuli/SPLAT-Cello_example_mono-29144497198618892/16-12799.wav
+      17-41299: 
+        configs/resources/stimuli/SPLAT-Cello_example_mono-29144497198618892/17-41299.wav
+      18-3799: configs/resources/stimuli/SPLAT-Cello_example_mono-29144497198618892/18-3799.wav
+      19-26299: 
+        configs/resources/stimuli/SPLAT-Cello_example_mono-29144497198618892/19-26299.wav
+      guitar_anchor: configs/resources/audio/guitar_anchor.wav
+- type: finish
+  name: Thank you
+  content: Thank you for attending
+  popupContent: Your results were sent. Goodbye and have a nice day
+  showResults: true
+  writeResults: true
+  questionnaire:
+  - type: text
+    label: Name
+    name: Name
+  - type: text
+    label: Surname
+    name: Surname
+  - type: number
+    label: Age
+    name: Age
+    min: 0
+    max: 100
+    default: 30
+  - type: likert
+    name: gender
+    label: Gender
+    response:
+    - value: male
+      label: Male
+    - value: female
+      label: Female
+  - type: likert
+    name: Musical Proficiency
+    label: Musical Proficiency
+    response:
+    - value: beginner
+      label: Beginner
+    - value: intermediate
+      label: Intermediate
+    - value: advanced
+      label: Advanced
+  - type: text
+    label: Email
+    name: email

@@ -1,0 +1,221 @@
+testname: Single Packet Loss Audibility Test
+testId: SPLAT-Blues_Guitar-17898037803615409
+bufferSize: 2048
+stopOnErrors: false
+showButtonPreviousPage: true
+remoteService: service/write.php
+pages:
+- type: generic
+  id: Explanation
+  name: Instructions
+  content: '                <h2>Requirements</h2>                <p>For this test
+    you will need a pair of Beyerdynamic DT770 PRO headphones, a good audio interface
+    (avoid Behringer) and a quiet environment.</p>                <h2>Explanation</h2>                The
+    goal of this test is to assess how audible audio glitches are in an audio signal.<br>                You
+    will be presented with 12 3-second unlabeled audio tracks in each of the 4 listening
+    sessions.<br>                You need to assign each track a score between 0 and
+    100 representing how audible the glitch was.<br>                The scale is divided
+    into the following five sections: "Not at all", "Barely", "A bit", "Much", and
+    "Very Much".                  <h2>Audio Examples</h2>                  Below you
+    can find some examples of the audio tracks you will be presented with.<br>                  Listen
+    carefully to the examples to understand the scale.<br>                <table>                  <tr>                    <th></th>                    <th>Cello</th>                    <th>Piano</th>                  </tr>                  <tr>                    <td>Not
+    at all</td>                    <td>                      <audio controls>                          <source
+    src="configs/resources/audio/example_not_at_all_1_stim.wav" type="audio/wav">                          Your
+    browser does not support the audio element.                      </audio>                    </td>                    <td>                      <audio
+    controls>                          <source src="configs/resources/audio/example_not_at_all_2_ref.wav"
+    type="audio/wav">                          Your browser does not support the audio
+    element.                      </audio>                    </td>                  </tr>                  <tr>                    <td>A
+    bit</td>                    <td>                      <audio controls>                          <source
+    src="configs/resources/audio/example_a_bit_1_stim.wav" type="audio/wav">                          Your
+    browser does not support the audio element.                      </audio>                    </td>                    <td>                      <audio
+    controls>                          <source src="configs/resources/audio/example_a_bit_2_stim.wav"
+    type="audio/wav">                          Your browser does not support the audio
+    element.                      </audio>                    </td>                  </tr>                  <tr>                    <td>Very
+    Much</td>                    <td>                      <audio controls>                          <source
+    src="configs/resources/audio/example_very_much_1_stim.wav" type="audio/wav">                          Your
+    browser does not support the audio element.                      </audio>                    </td>                    <td>                      <audio
+    controls>                          <source src="configs/resources/audio/example_very_much_2_stim.wav"
+    type="audio/wav">                          Your browser does not support the audio
+    element.                      </audio>                    </td>                  </tr>                </table>                <style>                    table
+    {                        margin-left: auto;                        margin-right:
+    auto;                        border-collapse: collapse;                    }                    th,
+    td {                        border: 0px solid black;                        padding:
+    10px;                        text-align: center;                    }                </style>'
+- type: generic
+  id: Consent
+  name: Declaration of consent
+  content: <h1>Declaration of consent</h1>      <p>By clicking the 'Next' button,
+    you give your consent to the following. Please read the following consent entries
+    carefully.</p>      <br/>      <p><i>I confirm that I have read and understand
+    the participant information <br/>sheet for the project </i>Towards Perceptual
+    Deep Learning-based Packet Loss Concealment.</p>      <br/>      <p><i>I confirm
+    that I am 18 years of age or older.</i></p>      <br/>      <p><i>I understand
+    that if I have any queries or concerns relating to this <br/>study I can contact
+    Luca Vignati (luca.vignati@unitn.it) at any time.</i></p>      <br/>      <p><i>      I
+    understand that I have the right to withdraw from this study at any <br/>      time
+    without requirement to provide reason, and that if I withdraw,<br/>       any
+    data provided up to this point will be retained.</i></p>      <br/>      <p><i>I
+    agree for my personal information, including gender, age and listening experience
+    to be recorded.</i></p>      <br/>      <p><i>      I understand that the data
+    I provide may be presented anonymously in <br/>r      esearch output and publication,
+    will be retained securely and indefinitely,<br/>      and may be made accessible
+    to future researchers.</i></p>
+- type: generic
+  id: Volume
+  name: Adjust your volume
+  content: <h1>Adjust your volume</h1>      <p>Before the experiment begins, please
+    adjust your listening volume.</p>      <p>Please do not change the output volume
+    of the system from now on.</p>
+-
+  - random
+  - type: splat
+    id: 6799-47299-8299-36799-41299-44299-35299-56299-32299-39799
+    name: Test in progress
+    content: '<p>IMPORTANT: When you press play on a stimulus, let it play till the
+      end or hit pause. If you press play on another stimulus before the first finished,
+      a glitch will be produced and the test will be invalid.</p>Please rate the audibility
+      of the glitch in the following audio examples. How much can you hear it?'
+    createAnchor35: false
+    createAnchor70: false
+    showWaveform: false
+    enableLooping: false
+    switchBack: true
+    randomize: true
+    reference: configs/resources/audio/guitar_reference.wav
+    stimuli:
+      0-6799: configs/resources/stimuli/SPLAT-Blues_Guitar-17898037803615409/0-6799.wav
+      1-47299: configs/resources/stimuli/SPLAT-Blues_Guitar-17898037803615409/1-47299.wav
+      2-8299: configs/resources/stimuli/SPLAT-Blues_Guitar-17898037803615409/2-8299.wav
+      3-36799: configs/resources/stimuli/SPLAT-Blues_Guitar-17898037803615409/3-36799.wav
+      4-41299: configs/resources/stimuli/SPLAT-Blues_Guitar-17898037803615409/4-41299.wav
+      5-44299: configs/resources/stimuli/SPLAT-Blues_Guitar-17898037803615409/5-44299.wav
+      6-35299: configs/resources/stimuli/SPLAT-Blues_Guitar-17898037803615409/6-35299.wav
+      7-56299: configs/resources/stimuli/SPLAT-Blues_Guitar-17898037803615409/7-56299.wav
+      8-32299: configs/resources/stimuli/SPLAT-Blues_Guitar-17898037803615409/8-32299.wav
+      9-39799: configs/resources/stimuli/SPLAT-Blues_Guitar-17898037803615409/9-39799.wav
+      guitar_anchor: configs/resources/audio/guitar_anchor.wav
+  - type: splat
+    id: 48799-29299-45799-54799-50299-42799-9799-24799-18799-53299
+    name: Test in progress
+    content: '<p>IMPORTANT: When you press play on a stimulus, let it play till the
+      end or hit pause. If you press play on another stimulus before the first finished,
+      a glitch will be produced and the test will be invalid.</p>Please rate the audibility
+      of the glitch in the following audio examples. How much can you hear it?'
+    createAnchor35: false
+    createAnchor70: false
+    showWaveform: false
+    enableLooping: false
+    switchBack: true
+    randomize: true
+    reference: configs/resources/audio/guitar_reference.wav
+    stimuli:
+      10-48799: configs/resources/stimuli/SPLAT-Blues_Guitar-17898037803615409/10-48799.wav
+      11-29299: configs/resources/stimuli/SPLAT-Blues_Guitar-17898037803615409/11-29299.wav
+      12-45799: configs/resources/stimuli/SPLAT-Blues_Guitar-17898037803615409/12-45799.wav
+      13-54799: configs/resources/stimuli/SPLAT-Blues_Guitar-17898037803615409/13-54799.wav
+      14-50299: configs/resources/stimuli/SPLAT-Blues_Guitar-17898037803615409/14-50299.wav
+      15-42799: configs/resources/stimuli/SPLAT-Blues_Guitar-17898037803615409/15-42799.wav
+      16-9799: configs/resources/stimuli/SPLAT-Blues_Guitar-17898037803615409/16-9799.wav
+      17-24799: configs/resources/stimuli/SPLAT-Blues_Guitar-17898037803615409/17-24799.wav
+      18-18799: configs/resources/stimuli/SPLAT-Blues_Guitar-17898037803615409/18-18799.wav
+      19-53299: configs/resources/stimuli/SPLAT-Blues_Guitar-17898037803615409/19-53299.wav
+      guitar_anchor: configs/resources/audio/guitar_anchor.wav
+- type: generic
+  id: Pause
+  name: Break
+  content: <h1>Break</h1>      <p>Please take 5 minutes of rest from this trial. Take
+    off your headphones and chill for a while.</p>
+-
+  - random
+  - type: splat
+    id: 6799-47299-8299-36799-41299-44299-35299-56299-32299-39799
+    name: Test in progress
+    content: '<p>IMPORTANT: When you press play on a stimulus, let it play till the
+      end or hit pause. If you press play on another stimulus before the first finished,
+      a glitch will be produced and the test will be invalid.</p>Please rate the audibility
+      of the glitch in the following audio examples. How much can you hear it?'
+    createAnchor35: false
+    createAnchor70: false
+    showWaveform: false
+    enableLooping: false
+    switchBack: true
+    randomize: true
+    reference: configs/resources/audio/guitar_reference.wav
+    stimuli:
+      0-6799: configs/resources/stimuli/SPLAT-Blues_Guitar-17898037803615409/0-6799.wav
+      1-47299: configs/resources/stimuli/SPLAT-Blues_Guitar-17898037803615409/1-47299.wav
+      2-8299: configs/resources/stimuli/SPLAT-Blues_Guitar-17898037803615409/2-8299.wav
+      3-36799: configs/resources/stimuli/SPLAT-Blues_Guitar-17898037803615409/3-36799.wav
+      4-41299: configs/resources/stimuli/SPLAT-Blues_Guitar-17898037803615409/4-41299.wav
+      5-44299: configs/resources/stimuli/SPLAT-Blues_Guitar-17898037803615409/5-44299.wav
+      6-35299: configs/resources/stimuli/SPLAT-Blues_Guitar-17898037803615409/6-35299.wav
+      7-56299: configs/resources/stimuli/SPLAT-Blues_Guitar-17898037803615409/7-56299.wav
+      8-32299: configs/resources/stimuli/SPLAT-Blues_Guitar-17898037803615409/8-32299.wav
+      9-39799: configs/resources/stimuli/SPLAT-Blues_Guitar-17898037803615409/9-39799.wav
+      guitar_anchor: configs/resources/audio/guitar_anchor.wav
+  - type: splat
+    id: 48799-29299-45799-54799-50299-42799-9799-24799-18799-53299
+    name: Test in progress
+    content: '<p>IMPORTANT: When you press play on a stimulus, let it play till the
+      end or hit pause. If you press play on another stimulus before the first finished,
+      a glitch will be produced and the test will be invalid.</p>Please rate the audibility
+      of the glitch in the following audio examples. How much can you hear it?'
+    createAnchor35: false
+    createAnchor70: false
+    showWaveform: false
+    enableLooping: false
+    switchBack: true
+    randomize: true
+    reference: configs/resources/audio/guitar_reference.wav
+    stimuli:
+      10-48799: configs/resources/stimuli/SPLAT-Blues_Guitar-17898037803615409/10-48799.wav
+      11-29299: configs/resources/stimuli/SPLAT-Blues_Guitar-17898037803615409/11-29299.wav
+      12-45799: configs/resources/stimuli/SPLAT-Blues_Guitar-17898037803615409/12-45799.wav
+      13-54799: configs/resources/stimuli/SPLAT-Blues_Guitar-17898037803615409/13-54799.wav
+      14-50299: configs/resources/stimuli/SPLAT-Blues_Guitar-17898037803615409/14-50299.wav
+      15-42799: configs/resources/stimuli/SPLAT-Blues_Guitar-17898037803615409/15-42799.wav
+      16-9799: configs/resources/stimuli/SPLAT-Blues_Guitar-17898037803615409/16-9799.wav
+      17-24799: configs/resources/stimuli/SPLAT-Blues_Guitar-17898037803615409/17-24799.wav
+      18-18799: configs/resources/stimuli/SPLAT-Blues_Guitar-17898037803615409/18-18799.wav
+      19-53299: configs/resources/stimuli/SPLAT-Blues_Guitar-17898037803615409/19-53299.wav
+      guitar_anchor: configs/resources/audio/guitar_anchor.wav
+- type: finish
+  name: Thank you
+  content: Thank you for attending
+  popupContent: Your results were sent. Goodbye and have a nice day
+  showResults: true
+  writeResults: true
+  questionnaire:
+  - type: text
+    label: Name
+    name: Name
+  - type: text
+    label: Surname
+    name: Surname
+  - type: number
+    label: Age
+    name: Age
+    min: 0
+    max: 100
+    default: 30
+  - type: likert
+    name: gender
+    label: Gender
+    response:
+    - value: male
+      label: Male
+    - value: female
+      label: Female
+  - type: likert
+    name: Musical Proficiency
+    label: Musical Proficiency
+    response:
+    - value: beginner
+      label: Beginner
+    - value: intermediate
+      label: Intermediate
+    - value: advanced
+      label: Advanced
+  - type: text
+    label: Email
+    name: email
