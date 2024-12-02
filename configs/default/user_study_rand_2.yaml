@@ -1,0 +1,342 @@
+testname: Towards Perceptual Deep Learning-based PLC - User Study
+testId: user_study
+bufferSize: 2048
+stopOnErrors: true
+showButtonPreviousPage: true
+remoteService: service/write.php
+
+pages:
+  - type: generic
+    id: landing
+    name: Welcome!
+    content: >
+      <img src="configs/resources/images/marchio_unitn.png" width="400"></img> 
+      <h1>Welcome to this experiment</h1>
+      <p>Thank you for helping with this study. This test is part of a master's project on enhancements of Packet Loss Concealment in Networked Music Performance System.</p>
+      <p>In this test, you will listen to 9 short music clips, each using 5 different algorithms to conceal music problems caused by lossy network connections.</p>
+      <p>Your job is to listen to each clip and rate the audio quality from 1 to 100.</p>
+      <p>We appreciate your help! Your feedback will help make jamming over the internet more enjoyable for everyone.</p/> 
+      <p>Let's get started!</p>
+
+  
+  - type: generic
+    id: consent
+    name: Declaration of consent
+    content: >
+      <h1>Declaration of consent</h1>
+      <p>By clicking the 'Next' button, you give your consent to the following. Please read the following consent entries carefully.</p>
+      <br/>
+      <p><i>I confirm that I have read and understand the participant information <br/>sheet for the project </i>Towards Perceptual Deep Learning-based Packet Loss Concealment.</p>
+      <br/>
+      <p><i>I confirm that I am 18 years of age or older.</i></p>
+      <br/>
+      <p><i>I understand that if I have any queries or concerns relating to this <br/>study I can contact Filippo Daniotti (filippo.daniotti@studenti.unitn.it) at any time.</i></p>
+      <br/>
+      <p><i>
+      I understand that I have the right to withdraw from this study at any <br/>
+      time without requirement to provide reason, and that if I withdraw,<br/> 
+      any data provided up to this point will be retained.</i></p>
+      <br/>
+      <p><i>I agree for my personal information, including gender, age and listening experience to be recorded.</i></p>
+      <br/>
+      <p><i>
+      I understand that the data I provide may be presented anonymously in <br/>r
+      esearch output and publication, will be retained securely and indefinitely,<br/> 
+      and may be made accessible to future researchers.</i></p>
+
+  - type: generic
+    id: volume
+    name: Adjust your volume
+    content: >
+      <h1>Adjust your volume</h1>
+      <p>Before the experiment begins, please adjust your listening volume.</p>
+      <p>Please do not change the output volume of the system from now on.</p>
+
+  - type: mushra
+    id: trial-3.3
+    name: Trial 1 - 1
+    content: >
+      <p>Start by playing the reference on the left.</p>
+      <p>Then listen to each clip individually and assign a score to each condition considering the <b>audio quality</b></p>
+    showWaveform: true
+    enableLooping: false
+    createAnchor35: false
+    createAnchor70: false
+    showConditionNames: false
+    randomize: true
+    reference: configs/resources/audio/egmd-drummer10_test_e3.wav
+    stimuli:
+      zero-filling: configs/resources/audio/egmd-drummer10_test_e3__zero-filling.wav
+      autoregressive: configs/resources/audio/egmd-drummer10_test_e3__autoregressive.wav
+      baseline: configs/resources/audio/egmd-drummer10_test_e3__parcnet_baseline-version_49.wav
+      compiled: configs/resources/audio/egmd-drummer10_test_e3__parcnet_compiled-version_11.wav
+      tilt loss: configs/resources/audio/egmd-drummer10_test_e3__parcnet_tloss-version_99.wav
+
+
+  - type: mushra
+    id: trial-1.1
+    name: Trial 1 - 2
+    content: >
+      <p>Start by playing the reference on the left.</p>
+      <p>Then listen to each clip individually and assign a score to each condition considering the <b>audio quality</b></p>
+    showWaveform: true
+    enableLooping: false
+    createAnchor35: false
+    createAnchor70: false
+    showConditionNames: false
+    randomize: true
+    reference: configs/resources/audio/tue1_excerpt_1_23328000.wav
+    stimuli:
+      zero-filling: configs/resources/audio/tue1_excerpt_1_23328000__zero-filling.wav
+      autoregressive: configs/resources/audio/tue1_excerpt_1_23328000__autoregressive.wav
+      baseline: configs/resources/audio/tue1_excerpt_1_23328000__baseline25.wav
+      compiled: configs/resources/audio/tue1_excerpt_1_23328000__parcnet_compiled-version_9.wav
+      tilt loss: configs/resources/audio/tue1_excerpt_1_23328000__parcnet_tloss-version_66.wav
+
+
+  - type: mushra
+    id: trial-2.1
+    name: Trial 1 - 3
+    content: >
+      <p>Start by playing the reference on the left.</p>
+      <p>Then listen to each clip individually and assign a score to each condition considering the <b>audio quality</b></p>
+    showWaveform: true
+    enableLooping: false
+    createAnchor35: false
+    createAnchor70: false
+    showConditionNames: false
+    randomize: true
+    reference: configs/resources/audio/tue1_excerpt_1_16960000.wav
+    stimuli:
+      zero-filling: configs/resources/audio/tue1_excerpt_1_16960000__zero-filling.wav
+      autoregressive: configs/resources/audio/tue1_excerpt_1_16960000__autoregressive.wav
+      baseline: configs/resources/audio/tue1_excerpt_1_16960000__baseline25.wav
+      compiled: configs/resources/audio/tue1_excerpt_1_16960000__parcnet_compiled-version_9.wav
+      tilt loss: configs/resources/audio/tue1_excerpt_1_16960000__parcnet_tloss-version_66.wav
+
+
+  # - type: generic
+  #   id: pause1
+  #   name: Coffe break
+  #   content: >
+  #     <h1>Coffe break!</h1>
+  #     <p>Please take 5 minutes of rest from this trial. Take off your headphones and chill <span>&#x2615;</span></p>
+  #     <img src="configs/resources/images/pause_1.gif"></img>
+  - type: generic
+    id: pause1
+    name: Break
+    content: >
+      <h1>Break</h1>
+      <p>Please take 5 minutes of rest from this trial. Take off your headphones and chill for a while.
+
+
+
+  - type: mushra
+    id: trial-2.3
+    name: Trial 2 - 1
+    content: >
+      <p>Start by playing the reference on the left.</p>
+      <p>Then listen to each clip individually and assign a score to each condition considering the <b>audio quality</b></p>
+    showWaveform: true
+    enableLooping: false
+    createAnchor35: false
+    createAnchor70: false
+    showConditionNames: false
+    randomize: true
+    reference: configs/resources/audio/egmd-drummer10_test_e2.wav
+    stimuli:
+      zero-filling: configs/resources/audio/egmd-drummer10_test_e2__zero-filling.wav
+      autoregressive: configs/resources/audio/egmd-drummer10_test_e2__autoregressive.wav
+      baseline: configs/resources/audio/egmd-drummer10_test_e2__parcnet_baseline-version_49.wav
+      compiled: configs/resources/audio/egmd-drummer10_test_e2__parcnet_compiled-version_11.wav
+      tilt loss: configs/resources/audio/egmd-drummer10_test_e2__parcnet_tloss-version_99.wav
+
+  
+  - type: mushra
+    id: trial-2.2
+    name: Trial 2 - 2
+    content: >
+      <p>Start by playing the reference on the left.</p>
+      <p>Then listen to each clip individually and assign a score to each condition considering the <b>audio quality</b></p>
+    showWaveform: true
+    enableLooping: false
+    createAnchor35: false
+    createAnchor70: false
+    showConditionNames: false
+    randomize: true
+    reference: configs/resources/audio/maestro2006_test_e1.wav
+    stimuli:
+      zero-filling: configs/resources/audio/maestro2006_test_e1__zero-filling.wav
+      autoregressive: configs/resources/audio/maestro2006_test_e1__autoregressive.wav
+      baseline: configs/resources/audio/maestro2006_test_e1__Mparcnet_baseline-version_36.wav
+      compiled: configs/resources/audio/maestro2006_test_e1__parcnet_compiled-version_12.wav
+      tilt loss: configs/resources/audio/maestro2006_test_e1__Mparcnet_tloss-version_93.wav
+
+
+
+
+  - type: mushra
+    id: trial-1.3
+    name: Trial 2 - 3
+    content: >
+      <p>Start by playing the reference on the left.</p>
+      <p>Then listen to each clip individually and assign a score to each condition considering the <b>audio quality</b></p>
+    showWaveform: true
+    enableLooping: false
+    createAnchor35: false
+    createAnchor70: false
+    showConditionNames: false
+    randomize: true
+    reference: configs/resources/audio/egmd-drummer10_test_e1.wav
+    stimuli:
+        zero-filling: configs/resources/audio/egmd-drummer10_test_e1__zero-filling.wav
+        autoregressive: configs/resources/audio/egmd-drummer10_test_e1__autoregressive.wav
+        baseline: configs/resources/audio/egmd-drummer10_test_e1__parcnet_baseline-version_49.wav
+        compiled: configs/resources/audio/egmd-drummer10_test_e1__parcnet_compiled-version_11.wav
+        tilt loss: configs/resources/audio/egmd-drummer10_test_e1__parcnet_tloss-version_99.wav
+
+  # - type: generic
+  #   id: pause2
+  #   name: Coffe break
+  #   content: >
+  #     <h1>Coffe break!</h1>
+  #     <p>Please take 5 minutes of rest from this trial. Take off your headphones and chill <span>&#x2615;</span></p>
+  #     <img src="configs/resources/images/pause_2.gif"></img>  
+  - type: generic
+    id: pause1
+    name: Break
+    content: >
+      <h1>Break</h1>
+      <p>Please take 5 minutes of rest from this trial. Take off your headphones and chill for a while.
+
+
+  - type: mushra
+    id: trial-3.1
+    name: Trial 3 - 1
+    content: >
+      <p>Start by playing the reference on the left.</p>
+      <p>Then listen to each clip individually and assign a score to each condition considering the <b>audio quality</b></p>
+    showWaveform: true
+    enableLooping: false
+    createAnchor35: false
+    createAnchor70: false
+    showConditionNames: false
+    randomize: true
+    reference: configs/resources/audio/tue1_excerpt_1_12128000.wav
+    stimuli:
+      zero-filling: configs/resources/audio/tue1_excerpt_1_12128000__zero-filling.wav
+      autoregressive: configs/resources/audio/tue1_excerpt_1_12128000__autoregressive.wav
+      baseline: configs/resources/audio/tue1_excerpt_1_12128000__baseline25.wav
+      compiled: configs/resources/audio/tue1_excerpt_1_12128000__parcnet_compiled-version_9.wav
+      tilt loss: configs/resources/audio/tue1_excerpt_1_12128000__parcnet_tloss-version_66.wav
+  - type: mushra
+    id: trial-3.2
+    name: Trial 3 - 2
+    content: >
+      <p>Start by playing the reference on the left.</p>
+      <p>Then listen to each clip individually and assign a score to each condition considering the <b>audio quality</b></p>
+    showWaveform: true
+    enableLooping: false
+    createAnchor35: false
+    createAnchor70: false
+    showConditionNames: false
+    randomize: true
+    reference: configs/resources/audio/maestro2006_test_e5.wav
+    stimuli:
+      zero-filling: configs/resources/audio/maestro2006_test_e5__zero-filling.wav
+      autoregressive: configs/resources/audio/maestro2006_test_e5__autoregressive.wav
+      baseline: configs/resources/audio/maestro2006_test_e5__Mparcnet_baseline-version_36.wav
+      compiled: configs/resources/audio/maestro2006_test_e5__parcnet_compiled-version_12.wav
+      tilt loss: configs/resources/audio/maestro2006_test_e5__Mparcnet_tloss-version_93.wav
+
+  - type: mushra
+    id: trial-1.2
+    name: Trial 3 - 3
+    content: >
+      <p>Start by playing the reference on the left.</p>
+      <p>Then listen to each clip individually and assign a score to each condition considering the <b>audio quality</b></p>
+    showWaveform: true
+    enableLooping: false
+    createAnchor35: false
+    createAnchor70: false
+    showConditionNames: false
+    randomize: true
+    reference: configs/resources/audio/maestro2006_test_e2.wav
+    stimuli:
+      zero-filling: configs/resources/audio/maestro2006_test_e2__zero-filling.wav
+      autoregressive: configs/resources/audio/maestro2006_test_e2__autoregressive.wav
+      baseline: configs/resources/audio/maestro2006_test_e2__Mparcnet_baseline-version_36.wav
+      compiled: configs/resources/audio/maestro2006_test_e2__parcnet_compiled-version_12.wav
+      tilt loss: configs/resources/audio/maestro2006_test_e2__Mparcnet_tloss-version_93.wav
+
+  - type: finish
+    name: Thank you
+    content: Thank you for participating
+    popupContent: Your results were sent. Goodbye and have a nice day
+    showResults: true
+    writeResults: true
+    questionnaire:
+      - type: text
+        name: first_name
+        label: First Name
+      - type: text
+        name: last_name
+        label: Last Name
+      - type: text
+        label: e-mail
+        name: email
+      - type: number
+        label: Age
+        name: age
+        min: 18
+        max: 100
+        default: 25
+      - type: likert
+        name: gender
+        label: Gender
+        response:
+          - value: female
+            label: Female
+          - value: male
+            label: Male
+          - value: other
+            label: Other
+          - value: other
+            label: Other
+      - type: text
+        label: Main instrument
+        name: instrument
+      - type: number
+        name: plays_since
+        label: Started playing music at age
+        min: 3
+        max: 100
+        default: 5
+      - type: likert
+        name: expertise
+        label: Musical Expertise
+        response:
+          - value: beginner
+            label: Beginner
+          - value: intermediate
+            label: Intermediate
+          - value: advanced
+            label: Advanced
+      - type: likert
+        name: status
+        label: Professional status
+        response:
+          - value: amateur
+            label: Amateur
+          - value: professional
+            label: Professional
+      - type: likert
+        name: education
+        label: Musical education
+        response:
+          - value: conservatory
+            label: Conservatory
+          - value: school
+            label: Music school
+          - value: private
+            label: Private lessons

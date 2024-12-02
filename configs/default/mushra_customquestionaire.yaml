@@ -11,13 +11,14 @@ remoteService: service/write.php
 
 pages:
 
-    - type: mushra
+    - type: splat
       id: trial2
       name: Mono Trial
       content: test description
       showWaveform: false
       enableLooping: true 
       reference: configs/resources/audio/mono_ref.wav
+      strict: false
       createAnchor35: true
       createAnchor70: true
       stimuli:
